@@ -51,7 +51,10 @@ function playSound(key) {
 function buttonAnimation(key) {
   var activeButton = document.querySelector("." + key);
   activeButton.classList.add("pressed");
-  setTimeout(function () {
+  if (activeButton !== null) {
+    activeButton.classList.add("pressed");
+    setTimeout(function () {
     activeButton.classList.remove("pressed");
-  }, 100);
+    }, 100);
+  }
 }
