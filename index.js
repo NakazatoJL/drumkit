@@ -50,7 +50,6 @@ function playSound(key) {
 
 function buttonAnimation(key) {
   var activeButton = document.querySelector("." + key);
-  activeButton.classList.add("pressed");
   if (activeButton !== null) {
     activeButton.classList.add("pressed");
     setTimeout(function () {
